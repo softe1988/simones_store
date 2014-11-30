@@ -124,9 +124,9 @@ $column-gutter: rem-calc(60);
 // $black       : #000000;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-bg: #86B258;
+$body-font-color: #5D1E66;
+$body-font-family: "Lucida Grande";
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -195,7 +195,7 @@ $column-gutter: rem-calc(60);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: "trebuchet ms";
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -1365,7 +1365,7 @@ $column-gutter: rem-calc(60);
 
 //below remove the comments with is //denoted by double back slash changed //background color of nav bar
 
-$topbar-bg: #212D48 !default;
+$topbar-bg: #AF96B2 !default;
 
 
 // Height and margin
