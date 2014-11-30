@@ -11,15 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
+  
+
+<div class="row">
+  <div class="small-3 columns">
+    <%= f.label :name, class: "right inline" %>
+  </div>
+  <div class="small-9 columns">
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :price %><br>
+</div>
+<div class="row">
+  <div class="small-3 columns">
+    <%= f.label :price, class: "right inline" %>
+  </div>
+  <div class="small-9 columns">
     <%= f.text_field :price %>
   </div>
-  <div class="actions">
+</div>
+<div class="row">
+  <div class="small-9 small-offset-3 columns">
     <%= f.submit %>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+
