@@ -11,12 +11,15 @@
     </div>
   <% end %>
 
-  <div class="row">
-   <div class="small-3 columns">
+
+
+<div class="row">
+  <div class="small-3 columns">
     <%= f.label :name, class: "right inline" %>
-    </div>
-    
-    <div class="small-9 columns">
+  </div>
+  <div class="small-9 columns">
+
+
     <%= f.text_field :name %>
     </div>
   
@@ -24,12 +27,22 @@
       <div class="small-3 columns">
     <%= f.label :price, class: "right inline" %>
   </div>
+
+</div>
+<div class="row">
+  <div class="small-3 columns">
+     <%= f.label :price, class: "right inline", title: "Price in USD", data: {tooltip: true } %>
+  </div>
   <div class="small-9 columns">
     <%= f.text_field :price %>
   </div>
-  
-  <div class="row">
-    <div class="small-9 small-offset-3 columns">
+</div>
+<div class="row">
+  <div class="small-9 small-offset-3 columns">
+
     <%= f.submit %>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+

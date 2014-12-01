@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
   <title>Storefront</title>
@@ -12,3 +13,55 @@
 
 </body>
 </html>
+=======
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+          <%= stylesheet_link_tag    "application" %>
+          <%= javascript_include_tag "vendor/modernizr" %>
+          <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+<!-- Nav Bar -->
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><%= link_to "Simone's Store", products_path %></a></h1>
+        </li>
+      </ul>
+      <!-- Defines names for each of the navigation sections in nav bar -->
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider"></li>
+          <li><%= link_to "Browse Products", products_path %></li>
+          <li class="divider"></li>
+          <li><%= link_to "Price List" %></li>
+          <li class="divider"></li>
+          <li><%= link_to "Contact Us" %></li>
+          <li class="divider"></li>
+          <li><%= link_to "Cart" %></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="row">
+      <!-- Fondation Grid System -->
+        <div class="large-8 columns">
+          <%= yield %>
+        </div>
+      <div class="large-4 columns">
+        <h2>About Us</h2>
+         <!-- Text in sidebar -->
+          <p> We are a small shop with a limited number of items, but what we carry, is of the highest quality. est. 2014</p>
+      </div>
+  </div>  
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+>>>>>>> storefront2
